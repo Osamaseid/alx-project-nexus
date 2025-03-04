@@ -15,7 +15,7 @@ A Django REST API for a job board platform with role-based authentication, job m
 
 ```bash
 git clone https://github.com/Osamaseid/alx-project-nexus.git
-cd job-board
+cd job_board
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
