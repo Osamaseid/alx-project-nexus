@@ -57,7 +57,6 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'drf_yasg',  # Swagger API documentation
     'django_filters',
-
     # Custom apps
     'users',
     'jobs',
