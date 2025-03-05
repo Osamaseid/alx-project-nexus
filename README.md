@@ -10,6 +10,8 @@ A Django REST API for a job board platform with role-based authentication, job m
 - **Optimized Job Search** (filter by location, category, and keyword)
 - **Swagger API Documentation** for easy testing
 - **PostgreSQL Database** for scalable storage
+- **File Upload Support (Users can upload resumes for job applications)
+- **Admin Dashboard for managing jobs and applications
 
 ## 🔧 Installation
 
