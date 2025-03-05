@@ -16,11 +16,11 @@ A Django REST API for a job board platform with role-based authentication, job m
 
 ## Error Handling
 
-Custom exception handling is implemented in utils/exceptions.py.
+- Custom exception handling is implemented in utils/exceptions.py.
 
-All errors return a structured JSON response with error and status_code fields.
+- All errors return a structured JSON response with error and status_code fields.
 
-Configured in settings.py under REST_FRAMEWORK['EXCEPTION_HANDLER'].
+-Configured in settings.py under REST_FRAMEWORK['EXCEPTION_HANDLER'].
 
 ## 🔧 Installation
 
