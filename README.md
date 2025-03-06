@@ -10,8 +10,17 @@ A Django REST API for a job board platform with role-based authentication, job m
 - **Optimized Job Search** (filter by location, category, and keyword)
 - **Swagger API Documentation** for easy testing
 - **PostgreSQL Database** for scalable storage
-- **File Upload Support (Users can upload resumes for job applications)
-- **Admin Dashboard for managing jobs and applications
+- File Upload Support (Users can upload resumes for job applications)
+- Admin Dashboard for managing jobs and applications
+- Structured Error Handling for consistent API responses
+
+## Error Handling
+
+- Custom exception handling is implemented in utils/exceptions.py.
+
+- All errors return a structured JSON response with error and status_code fields.
+
+- Configured in settings.py under REST_FRAMEWORK['EXCEPTION_HANDLER'].
 
 ## 🔧 Installation
 
