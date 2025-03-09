@@ -8,6 +8,7 @@ A Django REST API for a job board platform with role-based authentication, job m
 - **JWT Authentication** for secure login
 - **Job Posting & Management** with CRUD operations
 - **Optimized Job Search** (filter by location, category, and keyword)
+- Filtering by Experience Level (Entry Level, Mid Level, Senior Level)
 - **Swagger API Documentation** for easy testing
 - **PostgreSQL Database** for scalable storage
 - File Upload Support (Users can upload resumes for job applications)
@@ -50,6 +51,9 @@ python manage.py runserver
 - `GET /api/jobs/{id}/` - Retrieve job details
 - `PUT /api/jobs/{id}/` - Update job (Admin only)
 - `DELETE /api/jobs/{id}/` - Delete job (Admin only)
+- `GET /api/jobs/?experience_level=entry` - Filter jobs by Entry Level
+- `GET /api/jobs/?experience_level=mid` - Filter jobs by Mid Level
+- `GET /api/jobs/?experience_level=senior` - Filter jobs by Senior Level
 
 ### Applications
 
