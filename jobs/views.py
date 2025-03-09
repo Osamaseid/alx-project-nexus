@@ -11,8 +11,9 @@ class JobListCreateView(generics.ListCreateAPIView):
     queryset = Job.objects.all()
     serializer_class = JobSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter]
-    filterset_fields = ['category', 'location']
+    filterset_fields = ['category', 'location', 'experience_level']
     search_fields = ['title', 'description']
+
 
     def get_permissions(self):
         if self.request.method == 'POST':
