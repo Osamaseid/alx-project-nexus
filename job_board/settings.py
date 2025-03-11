@@ -66,10 +66,12 @@ INSTALLED_APPS = [
     # Custom apps
     'users',
     'jobs',
+    'corsheaders',
 ]
 
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -78,6 +80,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    
+
 ]
 
 ROOT_URLCONF = 'job_board.urls'
@@ -177,3 +181,6 @@ CORS_ALLOW_HEADERS = ["content-type", "authorization", "x-requested-with"]
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'utils.exceptions.custom_exception_handler',
 }
+
+
+CORS_ALLOW_CREDENTIALS = True
