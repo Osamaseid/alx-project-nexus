@@ -6,6 +6,7 @@ from .permissions import IsAdminUser, IsJobApplicant
 from rest_framework import filters
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Job
+from rest_framework.permissions import IsAuthenticated
 
 class JobListCreateView(generics.ListCreateAPIView):
     queryset = Job.objects.all()
@@ -34,7 +35,7 @@ class JobDetailView(generics.RetrieveUpdateDestroyAPIView):
 
 class ApplicationCreateView(generics.CreateAPIView):
     serializer_class = ApplicationSerializer
-    permission_classes = [IsJobApplicant]
+    permission_classes = [IsAuthenticated]
 
     def perform_create(self, serializer):
         serializer.save(applicant=self.request.user)

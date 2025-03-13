@@ -1,0 +1,47 @@
+<!DOCTYPE html >
+	<html>
+		<head>
+			<title>javascript</title>
+</head>
+<style>
+	*{
+		background-color:;
+}
+	#div1{
+		padding :10px;
+		border-style:solid;
+		margin:30px;
+		background-color:white;
+}
+button {
+	padding:10px;
+	margin:10px;
+	width:100px;
+}
+
+</style>
+<body>
+	<center>
+	<div id="div1">
+		<h1>Click To Change Time</h1>
+		<button  id="sun">  Sun</button >
+		<button id ="moon"> Moon</button>
+		<p id="text" class="hidden "></p>
+</div>
+</center>
+<script>
+	document.getElementById('sun').addEventListener('click',function(){
+	document.body.style.backgroundColor ='white';
+	const message = document.getElementById('text');
+	message.textContent ='Good Morning  ';
+	message.classList.remove('hidden');
+	});
+	document.getElementById('moon').addEventListener('click',function(){
+	document.body.style.backgroundColor ='black';
+	const message = document.getElementById('text');
+	message.textContent ='Good Evening  ';
+	message.classList.remove('hidden');
+	});
+</script>
+</body>
+</html>
