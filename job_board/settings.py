@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     # Custom apps
     'users',
     'jobs',
+    
     'corsheaders',
 ]
 
